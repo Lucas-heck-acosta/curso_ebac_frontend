@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+.container h1
+{
+    width: 50%;
+    margin: auto;
+}
+.container input
+{
+    width: 49%;
+}
+
+button
+{
+    width: 99%;
+}
+#nA
+{
+    border: 2px solid green;
+}
+#nB
+{
+    border: 2px solid blue;
+}
+.resultado
+{
+    padding: 16px;
+    display: none;
+}
