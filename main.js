@@ -3,27 +3,26 @@ const form = document.getElementById('form')
 form.addEventListener('submit', function(e){
     e.preventDefault()
 
-    const numeroA = document.getElementById('nA').value
-    const numeroB = document.getElementById('nB').value
-    const containerRsultado = document.querySelector('.resultado')
+    const numeroA = parseInt(document.getElementById('nA').value);
+    const numeroB = parseInt(document.getElementById('nB').value);
+    const containerResultado = document.querySelector('.resultado');
 
-    containerRsultado.style.display = 'block'
+    containerResultado.style.display = 'block';
 
-    if(numeroA > numeroB)
+    if (numeroA > numeroB)
     {
-        containerRsultado.innerHTML = `Número A <b>(${numeroA})</b> maior que número B <b>(${numeroB})</b>`
-        containerRsultado.style.backgroundColor = 'green'
+        containerResultado.innerHTML = `Número A <b>(${numeroA})</b> é maior que número B <b>(${numeroB})</b>`;
+        containerResultado.style.backgroundColor = 'green';
     }
-    else if(numeroA < numeroB)
+    else if (numeroA < numeroB)
     {
-        containerRsultado.innerHTML = `Número B <b>(${numeroB})</b> maior que número A <b>(${numeroA})</b>`
-        containerRsultado.style.backgroundColor = 'blue'
+        containerResultado.innerHTML = `Número B <b>(${numeroB})</b> é maior que número A <b>(${numeroA})</b>`;
+        containerResultado.style.backgroundColor = 'blue';
     }
     else
     {
-        containerRsultado.innerHTML = "Valores iguais"
-        containerRsultado.style.backgroundColor = 'yellow'
-
+        containerResultado.innerHTML = "Valores iguais";
+        containerResultado.style.backgroundColor = 'yellow';
     }
 
 })
