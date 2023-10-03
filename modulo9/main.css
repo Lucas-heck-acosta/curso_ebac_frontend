@@ -1,0 +1,31 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    margin: auto;
+    justify-content: center;
+    padding: 16px;
+}
+
+.container
+{
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+}
+
+ul
+{
+    margin-top: 26px;
+}
+
+ul li
+{
+    cursor: pointer;
+    font-size: 18px;
+}
